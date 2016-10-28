@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dialog_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">    <!-- 取消对话框按钮图标 -->
+
+    <TextView
+        android:id="@+id/tv_dialog_pwd_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="请输入支付密码"
+        android:textSize="20sp" />
+    <!-- 修饰线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_dialog_pwd_title"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_dialog_pwd_title"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="￥ 100"
+        android:textSize="40sp" />
+
+    <!-- 密码输入框-->
+    <LinearLayout
+        android:id="@+id/layout_dialog_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/money"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_dialog_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:inputType="numberPassword"
+            android:maxLength="6" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:inputType="numberPassword"
+            android:maxLength="6" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="确定" />
+    </LinearLayout>
+</RelativeLayout>
